@@ -1,0 +1,87 @@
+site_name: "പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍"
+nav:
+    - "പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍": 'index.md'
+    - '1. പൈത്തണ്‍ ആമുഖം':
+      - 'പൈത്തണ്‍ ആമുഖം': 'chapter_1/python_introduction.md'
+      - 'പൈത്തണ്‍ സവിശേഷതകള്‍': 'chapter_1/python_features.md'
+      - 'പൈത്തണ്‍ 3 ഇന്‍സ്റ്റോളേഷന്‍': 'chapter_1/python3_installation.md'
+      - 'പൈത്തണ്‍ കോഡ് റണ്‍ ചെയ്യുന്നതെങ്ങനെ?': 'chapter_1/how_to_run_python_program.md'
+      - 'വിഷ്വല്‍ സ്റ്റുഡിയോ കോഡ് സെറ്റപ്പ്': 'chapter_1/visual_studio_code_setup.md'
+      - 'പ്രോഗ്രാമ്മിങ് അടിസ്ഥാന പദസംഹിത': 'chapter_1/programming_terminologies.md'
+      - 'അധിക വായനയ്ക്ക്': 'chapter_1/know_more.md'
+
+    - '2. ഓപ്പറേറ്ററുകള്‍':
+      - 'ആമുഖം': 'chapter2/2_introduction.md'
+      - 'അരിത്മെറ്റിക് ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_1_arithmetic_operators.md'
+      - 'കംപാരിസണ്‍ ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_2_comparison_operators.md'
+      - 'അസൈന്‍മെന്റ് ഓപ്പറേറ്റര്‍': 'chapter2/2_3_assignment_operators.md'
+      - 'ലോജിക്കല്‍ ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_4_logical_operators.md'
+      - 'ബിറ്റ്‌വൈസ് ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_5_bitwise_operators.md'
+      - 'മെമ്പര്‍ഷിപ്പ് ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_6_membership_operators.md'
+      - 'ഐഡന്റിറ്റി ഓപ്പറേറ്ററുകള്‍': 'chapter2/2_7_identity_operators.md'
+    - '3. ഡാറ്റാടൈപ്പുകള്‍': 
+      - 'ആമുഖം': 'chapter3/introduction.md'
+      - 'ന്യൂമെറിക്കല്‍ ഡാറ്റടൈപ്പുകള്‍': 'chapter3/numeric.md'
+      - 'ടെക്സ്റ്റ് ടൈപ്പ്': 'chapter3/text_type.md'
+      - 'സീക്വന്‍സ് ടൈപ്പ്': 'chapter3/sequence_types.md'
+    - '4. ഫ്ലോ കണ്‍ട്രോള്‍': ''
+    - '5. ഫംഗ്ഷന്‍': ''
+    - '6. ഒബ്ജക്റ്റ് ഓറിയന്റഡ് പ്രോഗ്രാമ്മിങ്': ''
+    - '7. മൊഡ്യൂളും പാക്കേജും': ''
+    - '8. ഫയല്‍ ഹാന്‍ഡ്ലിങ്': ''
+    - '9. റെഗുലര്‍ എക്സ്പ്രെഷന്‍': ''
+    - '10. കങ്കറന്‍സിയും പാരലിസവും': ''
+
+    - 'അനുബന്ധം':
+      - 'ആമുഖം': 'appendix/introduction.md'
+      - 'നമ്പര്‍ സിസ്റ്റം': 'appendix/number_system.md'
+      - 'ബിറ്റ്‌വൈസ് നോട്ട്': 'appendix/not_is_not.md'
+      - 'ഐ‌ഇ‌ഇ‌ഇ 754 സ്റ്റാന്‍ഡേര്‍ഡ്': ''
+    - 'വാല്‍ക്കഷ്ണം': 'misc/valkkashnam.md'
+
+
+theme:
+  name: material
+  icon:
+    admonition:
+      <type>: <icon>
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      primary: teal
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Gayathri
+  features:
+    - header.autohide
+
+plugins: []
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
