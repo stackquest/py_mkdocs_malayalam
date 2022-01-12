@@ -23,20 +23,24 @@ nav:
       - 'ആമുഖം': 'chapter3/introduction.md'
       - 'ന്യൂമെറിക്കല്‍ ഡാറ്റടൈപ്പുകള്‍': 'chapter3/numeric.md'
       - 'ടെക്സ്റ്റ് ടൈപ്പ്': 'chapter3/text_type.md'
-      - 'സീക്വന്‍സ് ടൈപ്പ്': 'chapter3/sequence_types.md'
-    - '4. ഫ്ലോ കണ്‍ട്രോള്‍': ''
-    - '5. ഫംഗ്ഷന്‍': ''
-    - '6. ഒബ്ജക്റ്റ് ഓറിയന്റഡ് പ്രോഗ്രാമ്മിങ്': ''
-    - '7. മൊഡ്യൂളും പാക്കേജും': ''
-    - '8. ഫയല്‍ ഹാന്‍ഡ്ലിങ്': ''
-    - '9. റെഗുലര്‍ എക്സ്പ്രെഷന്‍': ''
-    - '10. കങ്കറന്‍സിയും പാരലിസവും': ''
+      - 'സീക്വന്‍സ് ടൈപ്പ്':
+          - 'സീക്വന്‍സ് ടൈപ്പ്': 'chapter3/sequence_types.md'
+          - 'ലിസ്റ്റ്': 'chapter3/list.md'
+          - 'ടപ്പിള്‍': 'chapter3/tuple.md'
+          - 'റേഞ്ച്': 'chapter3/range.md'
+    # - '4. ഫ്ലോ കണ്‍ട്രോള്‍': ''
+    # - '5. ഫംഗ്ഷന്‍': ''
+    # - '6. ഒബ്ജക്റ്റ് ഓറിയന്റഡ് പ്രോഗ്രാമ്മിങ്': ''
+    # - '7. മൊഡ്യൂളും പാക്കേജും': ''
+    # - '8. ഫയല്‍ ഹാന്‍ഡ്ലിങ്': ''
+    # - '9. റെഗുലര്‍ എക്സ്പ്രെഷന്‍': ''
+    # - '10. കങ്കറന്‍സിയും പാരലിസവും': ''
 
     - 'അനുബന്ധം':
       - 'ആമുഖം': 'appendix/introduction.md'
       - 'നമ്പര്‍ സിസ്റ്റം': 'appendix/number_system.md'
       - 'ബിറ്റ്‌വൈസ് നോട്ട്': 'appendix/not_is_not.md'
-      - 'ഐ‌ഇ‌ഇ‌ഇ 754 സ്റ്റാന്‍ഡേര്‍ഡ്': ''
+      # - 'ഐ‌ഇ‌ഇ‌ഇ 754 സ്റ്റാന്‍ഡേര്‍ഡ്': ''
     - 'വാല്‍ക്കഷ്ണം': 'misc/valkkashnam.md'
 
 
@@ -50,13 +54,13 @@ theme:
       primary: teal
       scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/lightbulb-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)" 
       primary: teal
       scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-outline
         name: Switch to light mode
   font:
     text: Gayathri
