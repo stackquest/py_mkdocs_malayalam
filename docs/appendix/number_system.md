@@ -31,7 +31,7 @@ $$
 * ദശാംശ സംഖ്യാ സമ്പ്രദായത്തില്‍ ഒരു അക്കം ഉപയോഗിച്ച് $10^{1} - 1 = 9$ വരെയും രണ്ടക്കം ഉപയോഗിച്ച് $10^{2} - 1= 99$ വരെയും മൂന്നക്കം ഉപയോഗിച്ച് $10^{3} - 1= 999$ വരെയുമുള്ള സംഖ്യകള്‍ നിര്‍മിക്കാനാകും. അതായത്
 
 $$
-\bbox[yellow,5px,border:2px solid red]
+\bbox[teal,5px,border:2px solid white]
 {
     10^{N} - 1 = \text{Maximum number.} \text{Where, N} \rightarrow \text{Number of digits} 
 }

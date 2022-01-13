@@ -1,6 +1,6 @@
-site_name: "പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍"
+site_name: "പൈത്തണ്‍: കംപ്യൂട്ടിങ്ങിലേക്ക് ഒരു ആമുഖം"
 nav:
-    - "പൈത്തണ്‍: ഓര്‍ക്കേണ്ട വസ്തുതകള്‍": 'index.md'
+    - "പൈത്തണ്‍: കംപ്യൂട്ടിങ്ങിലേക്ക് ഒരു ആമുഖം": 'index.md'
     - '1. പൈത്തണ്‍ ആമുഖം':
       - 'പൈത്തണ്‍ ആമുഖം': 'chapter_1/python_introduction.md'
       - 'പൈത്തണ്‍ സവിശേഷതകള്‍': 'chapter_1/python_features.md'
@@ -28,6 +28,11 @@ nav:
           - 'ലിസ്റ്റ്': 'chapter3/list.md'
           - 'ടപ്പിള്‍': 'chapter3/tuple.md'
           - 'റേഞ്ച്': 'chapter3/range.md'
+      - 'മാപ്പിങ് ടൈപ്പ്':
+          - 'ഡിക്ഷനറി': 'chapter3/dictionary.md'
+      - 'സെറ്റ് ടൈപ്പ്':
+          - 'സെറ്റ്':  'chapter3/set.md'
+          - 'ഫ്രോസന്‍ സെറ്റ്':  'chapter3/frozen_set.md'
     # - '4. ഫ്ലോ കണ്‍ട്രോള്‍': ''
     # - '5. ഫംഗ്ഷന്‍': ''
     # - '6. ഒബ്ജക്റ്റ് ഓറിയന്റഡ് പ്രോഗ്രാമ്മിങ്': ''
@@ -52,20 +57,24 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)" 
       primary: teal
-      scheme: default
+      scheme: teal
+      accent: teal
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)" 
       primary: teal
       scheme: slate
+      accent: teal
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
   font:
-    text: Gayathri
+    text: "Gayathri"
   features:
     - header.autohide
+    - content.code.annotate
+    - navigation.top
 
 plugins: []
 
@@ -74,6 +83,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
