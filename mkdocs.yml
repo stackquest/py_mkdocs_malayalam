@@ -1,4 +1,6 @@
 site_name: "പൈത്തണ്‍: കംപ്യൂട്ടിങ്ങിലേക്ക് ഒരു ആമുഖം"
+repo_url: "https://stackquest.github.io/"
+site_url: "https://stackquest.github.io/"
 nav:
     - "പൈത്തണ്‍: കംപ്യൂട്ടിങ്ങിലേക്ക് ഒരു ആമുഖം": 'index.md'
     - '1. പൈത്തണ്‍ ആമുഖം':
@@ -31,9 +33,11 @@ nav:
       - 'മാപ്പിങ് ടൈപ്പ്':
           - 'ഡിക്ഷനറി': 'chapter3/dictionary.md'
       - 'സെറ്റ് ടൈപ്പ്':
-          - 'സെറ്റ്':  'chapter3/set.md'
-          - 'ഫ്രോസന്‍ സെറ്റ്':  'chapter3/frozen_set.md'
-    # - '4. ഫ്ലോ കണ്‍ട്രോള്‍': ''
+          - 'സെറ്റ്': 'chapter3/set.md'
+          - 'ഫ്രോസന്‍ സെറ്റ്': 'chapter3/frozen_set.md'
+    - '4. ഫ്ലോ കണ്‍ട്രോള്‍':
+          - 'ആമുഖം': 'chapter4/introduction.md'
+          - 'if കണ്ടീഷന്‍': 'chapter4/if_condition.md'
     # - '5. ഫംഗ്ഷന്‍': ''
     # - '6. ഒബ്ജക്റ്റ് ഓറിയന്റഡ് പ്രോഗ്രാമ്മിങ്': ''
     # - '7. മൊഡ്യൂളും പാക്കേജും': ''
@@ -47,6 +51,7 @@ nav:
       - 'ബിറ്റ്‌വൈസ് നോട്ട്': 'appendix/not_is_not.md'
       # - 'ഐ‌ഇ‌ഇ‌ഇ 754 സ്റ്റാന്‍ഡേര്‍ഡ്': ''
     - 'വാല്‍ക്കഷ്ണം': 'misc/valkkashnam.md'
+    - 'സാധ്യതാ ചോദ്യങ്ങള്‍': 'misc/faq.md'
 
 
 theme:
@@ -76,9 +81,15 @@ theme:
     - content.code.annotate
     - navigation.top
 
-plugins: []
+# plugins:
+#     - pdf-with-js
 
 markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.arithmatex:
@@ -88,7 +99,6 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - admonition
   - pymdownx.details
   - attr_list
@@ -98,6 +108,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@8.13.10/dist/mermaid.min.js
 
 extra_css:
   - stylesheets/extra.css
